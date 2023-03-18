@@ -2,6 +2,7 @@ package main
 
 import (
 	"os"
+
 	"wechatbot/bootstrap"
 	"wechatbot/config"
 
@@ -16,6 +17,7 @@ func main() {
 	} else {
 		log.Info("Failed to log to file, using default stderr")
 	}
+
 	log.SetLevel(log.DebugLevel)
 	//log.SetLevel(log.InfoLevel)
 
@@ -27,6 +29,7 @@ func main() {
 
 	log.Info("程序启动")
 	err = config.LoadConfig()
+
 	if err != nil {
 		log.Warn("没有找到配置文件，尝试读取环境变量")
 	}

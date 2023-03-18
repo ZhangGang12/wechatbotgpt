@@ -138,11 +138,13 @@ func Completions(msg string) (*string, error) {
 
 	req.Header.Set("Content-Type", "application/json")
 	req.Header.Set("Authorization", fmt.Sprintf("Bearer %s", *apiKey))
+
 	client := &http.Client{
 		Transport: &http.Transport{
 			Proxy: http.ProxyFromEnvironment,
 		},
 	}
+
 	response, err := client.Do(req)
 	if err != nil {
 		return nil, err
