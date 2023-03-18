@@ -1,0 +1,2 @@
+time="2023-03-19T00:34:53+08:00" level=info msg="程序启动" func=main.main file="/root/work/wechatChatGpt/wechatgpt-main/main.go:28"
+time="2023-03-19T00:34:53+08:00" level=info msg="Start WebChat Bot" func=wechatbot/bootstrap.StartWebChat file="/root/work/wechatChatGpt/wechatgpt-main/bootstrap/wechat.go:13"

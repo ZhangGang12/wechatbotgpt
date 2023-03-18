@@ -1,0 +1,10 @@
+version: '2.4'
+services:
+  wechatgpt:
+    image: xiaomoinfo/wechatgpt:v3.0.1
+    environment:
+      api_key:  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
+      wechat: "true"
+      wechat_keyword: 小莫
+    command: ./server
+    restart: always

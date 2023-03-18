@@ -1,0 +1,7 @@
+chatgpt:
+  token: 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
+  wechat: "true"
+  wechat_keyword: chatgpt
+  #telegram: your telegram token
+  #tgWhitelist: username1,username2
+  #tgKeyword: chatgpt
